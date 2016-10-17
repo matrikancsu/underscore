@@ -27,7 +27,8 @@
     "pretty-bytes-cli": "^1.0.0",
     "qunit-cli": "~0.2.0",
     "qunitjs": "^1.18.0",
-    "uglify-js": "2.4.x"
+    "uglify-js": "2.4.x",
+    "eslint": "^0.10.0"
   },
   "scripts": {
     "test": "npm run test-node && npm run lint",
@@ -39,7 +40,8 @@
     "minify": "uglifyjs underscore.js -c \"evaluate=false\" --comments \"/    .*/\" -m",
     "build": "npm run minify -- --source-map underscore-min.map --source-map-url \" \" -o underscore-min.js",
     "doc": "docco underscore.js",
-    "weight": "npm run minify | gzip-size | pretty-bytes"
+    "weight": "npm run minify | gzip-size | pretty-bytes",
+    "lint": "eslint -f checkstyle <file name.js> > checkstyle-result.xml",
   },
   "license": "MIT",
   "files": [
