@@ -28,7 +28,7 @@
     "qunit-cli": "~0.2.0",
     "qunitjs": "^1.18.0",
     "uglify-js": "2.4.x",
-    "eslint": "^0.10.0"
+    "eslint": "latest"
   },
   "scripts": {
     "test": "npm run test-node && npm run lint",
