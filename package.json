@@ -41,7 +41,7 @@
     "build": "npm run minify -- --source-map underscore-min.map --source-map-url \" \" -o underscore-min.js",
     "doc": "docco underscore.js",
     "weight": "npm run minify | gzip-size | pretty-bytes",
-    "lint": "eslint -f checkstyle underscore.js > checkstyle-result.xml",
+    "lint": "eslint -f checkstyle underscore.js > checkstyle-result.xml"
   },
   "license": "MIT",
   "files": [
