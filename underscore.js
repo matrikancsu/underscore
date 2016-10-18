@@ -20,7 +20,7 @@
 
   // Save bytes in the minified (but not gzipped) version:
   var ArrayProto = Array.prototype, ObjProto = Object.prototype;
-  var SymbolProto = typeof Symbol !== 'undefined' ? Symbol.prototype : null;
+  //var SymbolProto = typeof Symbol !== 'undefined' ? Symbol.prototype : null;
 
   // Create quick reference variables for speed access to core prototypes.
   var push = ArrayProto.push,
